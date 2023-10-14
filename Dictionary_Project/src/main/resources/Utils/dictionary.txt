@@ -1,0 +1,7 @@
+Hello	xin chao
+Action	hoat dong
+House	ngoi nha
+Bring	mang
+Calculate	tinh
+Welcome	chao
+advance	nang cao

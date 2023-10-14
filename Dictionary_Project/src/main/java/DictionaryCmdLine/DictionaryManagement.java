@@ -1,4 +1,4 @@
-package main;
+package DictionaryCmdLine;
 
 import java.io.File;
 import java.io.PrintWriter;
@@ -32,7 +32,7 @@ public class DictionaryManagement {
         System.out.println(mp.get(t));
     }
     public void insertFromCommandline2() {
-        File f = new File("/Users/lehung/Documents/OOP/Dictionary/dictionary.txt");
+        File f = new File("/Users/lehung/Documents/OOP/OOP_Dictionary/Dictionary_Project/src/main/resources/Utils/dictionary.txt");
         try {
             List<String> allText = Files.readAllLines(f.toPath(), StandardCharsets.UTF_8);
             for (String line : allText) {
@@ -96,7 +96,7 @@ public class DictionaryManagement {
 
     public void dictionaryExportToFile() {
         try {
-            PrintWriter pw = new PrintWriter("/Users/lehung/Documents/OOP/Dictionary/dictionary.txt","UTF-8");
+            PrintWriter pw = new PrintWriter("/Users/lehung/Documents/OOP/OOP_Dictionary/Dictionary_Project/src/main/resources/Utils/dictionary.txt","UTF-8");
             for (Word w:dictionary) {
                 pw.println(w.getWord_target() + "\t" + w.getWord_explain());
             }
