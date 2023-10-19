@@ -19,7 +19,7 @@
          <graphic>
                 <ImageView fitHeight="30.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../Utils/Icons/393675583_689612106455003_2558189402138978978_n%20(1).png" />
+                        <Image url="@../Utils/Icons/lookup.png" />
                     </image>
                 </ImageView>
          </graphic>
@@ -31,7 +31,7 @@
          <graphic>
                 <ImageView fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../Utils/Icons/394014915_340470148384840_5196441924277844299_n%20(1).png" />
+                        <Image url="@../Utils/Icons/add.png" />
                     </image>
                 </ImageView>
          </graphic>
@@ -64,7 +64,7 @@
          <graphic>
             <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Utils/Icons/394253221_1394810687914535_7191085688503795877_n%20(1).png" />
+                  <Image url="@../Utils/Icons/update.png" />
                </image>
             </ImageView>
          </graphic>
@@ -73,7 +73,7 @@
          <graphic>
             <ImageView fitHeight="78.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Utils/Icons/Crop%20image%20project%20(1).png" />
+                  <Image url="@../Utils/Icons/remove.png" />
                </image>
             </ImageView>
          </graphic>
