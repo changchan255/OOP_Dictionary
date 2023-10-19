@@ -7,40 +7,79 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="920.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="870.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <ImageView fitHeight="631.0" fitWidth="831.0" layoutX="79.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@../../../../../../../../Downloads/387472848_2634258193397479_5820426671132712346_n.jpg" />
-            </image>
-        </ImageView>
-        <Button contentDisplay="CENTER" layoutX="15.0" layoutY="184.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="40.0" style="-fx-background-color: pink;" textFill="#9e5050">
+        <Button contentDisplay="CENTER" layoutX="12.0" layoutY="184.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="40.0" style="-fx-background-color: pink;" textFill="#9e5050">
             <font>
                 <Font name="System Italic" size="13.0" />
             </font>
-            <graphic>
-                <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" rotate="1.2">
-                    <image>
-                        <Image url="@../../../../../../../../Downloads/Project1OOP-main/DictionaryApplication/src/main/resources/Utils/icons/icons8_search_64px.png" />
-                    </image>
-                </ImageView>
-            </graphic>
             <tooltip>
                 <Tooltip text="Tra từ" />
             </tooltip>
-        </Button>
-        <Button layoutX="11.0" layoutY="250.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="43.0" style="-fx-background-color: pink;">
-            <graphic>
-                <ImageView fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+         <graphic>
+                <ImageView fitHeight="30.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../../../../../../Downloads/Project1OOP-main/DictionaryApplication/src/main/resources/Utils/icons/icons8_add_64px.png" />
+                        <Image url="@../Utils/Icons/393675583_689612106455003_2558189402138978978_n%20(1).png" />
                     </image>
                 </ImageView>
-            </graphic>
+         </graphic>
+        </Button>
+        <Button layoutX="9.0" layoutY="229.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="43.0" style="-fx-background-color: pink;">
             <tooltip>
                 <Tooltip text="Thêm từ" />
             </tooltip>
+         <graphic>
+                <ImageView fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Utils/Icons/394014915_340470148384840_5196441924277844299_n%20(1).png" />
+                    </image>
+                </ImageView>
+         </graphic>
         </Button>
+      <Button layoutX="14.0" layoutY="275.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="29.0" style="-fx-background-color: pink;">
+         <tooltip>
+            <Tooltip text="Dịch nghĩa" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Icons/icons8_google_translate_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane layoutX="73.0" layoutY="15.0" prefHeight="586.0" prefWidth="780.0">
+         <children>
+              <ImageView accessibleRole="PARENT" fitHeight="595.0" fitWidth="781.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../../../../../../../../Downloads/387472848_2634258193397479_5820426671132712346_n.jpg" />
+                  </image>
+              </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="7.0" layoutY="320.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="40.0" style="-fx-background-color: pink;">
+         <tooltip>
+            <Tooltip text="Chỉnh sửa" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Icons/394253221_1394810687914535_7191085688503795877_n%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="9.0" layoutY="371.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="33.0" style="-fx-background-color: pink;">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Icons/Crop%20image%20project%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Xoá từ" />
+         </tooltip>
+      </Button>
     </children>
 </Pane>
