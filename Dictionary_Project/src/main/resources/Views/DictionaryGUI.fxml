@@ -9,7 +9,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="870.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <Button contentDisplay="CENTER" layoutX="12.0" layoutY="184.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="40.0" style="-fx-background-color: pink;" textFill="#9e5050">
+        <Button contentDisplay="CENTER" layoutX="11.0" layoutY="148.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="40.0" style="-fx-background-color: pink;" textFill="#9e5050">
             <font>
                 <Font name="System Italic" size="13.0" />
             </font>
@@ -24,7 +24,7 @@
                 </ImageView>
          </graphic>
         </Button>
-        <Button layoutX="9.0" layoutY="229.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="43.0" style="-fx-background-color: pink;">
+        <Button layoutX="9.0" layoutY="208.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="43.0" style="-fx-background-color: pink;">
             <tooltip>
                 <Tooltip text="Thêm từ" />
             </tooltip>
@@ -36,7 +36,7 @@
                 </ImageView>
          </graphic>
         </Button>
-      <Button layoutX="14.0" layoutY="275.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="29.0" style="-fx-background-color: pink;">
+      <Button layoutX="13.0" layoutY="259.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="29.0" style="-fx-background-color: pink;">
          <tooltip>
             <Tooltip text="Dịch nghĩa" />
          </tooltip>
@@ -57,7 +57,7 @@
               </ImageView>
          </children>
       </Pane>
-      <Button layoutX="7.0" layoutY="320.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="40.0" style="-fx-background-color: pink;">
+      <Button layoutX="7.0" layoutY="308.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="40.0" style="-fx-background-color: pink;">
          <tooltip>
             <Tooltip text="Chỉnh sửa" />
          </tooltip>
@@ -69,7 +69,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="9.0" layoutY="371.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="33.0" style="-fx-background-color: pink;">
+      <Button layoutX="9.0" layoutY="363.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="33.0" style="-fx-background-color: pink;">
          <graphic>
             <ImageView fitHeight="78.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -80,6 +80,15 @@
          <tooltip>
             <Tooltip text="Xoá từ" />
          </tooltip>
+      </Button>
+      <Button layoutX="10.0" layoutY="423.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="57.0" style="-fx-background-color: pink;">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Icons/game.png" />
+               </image>
+            </ImageView>
+         </graphic>
       </Button>
     </children>
 </Pane>
