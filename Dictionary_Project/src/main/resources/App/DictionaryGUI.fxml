@@ -7,9 +7,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD:Dictionary_Project/src/main/resources/App/DictionaryGUI.fxml
 <AnchorPane prefHeight="614.0" prefWidth="867.0" style="-fx-background-color: pink;" styleClass="root" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
         <Button contentDisplay="CENTER" layoutX="8.0" layoutY="145.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="40.0" style="-fx-background-color: pink;" textFill="#9e5050">
+=======
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="870.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button contentDisplay="CENTER" layoutX="12.0" layoutY="184.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="40.0" style="-fx-background-color: pink;" textFill="#9e5050">
+>>>>>>> parent of dafcf18 (abc):Dictionary_Project/src/main/resources/Views/DictionaryGUI.fxml
             <font>
                 <Font name="System Italic" size="13.0" />
             </font>
@@ -24,7 +30,11 @@
                 </ImageView>
          </graphic>
         </Button>
+<<<<<<< HEAD:Dictionary_Project/src/main/resources/App/DictionaryGUI.fxml
         <Button layoutX="6.0" layoutY="209.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="43.0" style="-fx-background-color: pink;">
+=======
+        <Button layoutX="9.0" layoutY="229.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="43.0" style="-fx-background-color: pink;">
+>>>>>>> parent of dafcf18 (abc):Dictionary_Project/src/main/resources/Views/DictionaryGUI.fxml
             <tooltip>
                 <Tooltip text="Thêm từ" />
             </tooltip>
@@ -36,7 +46,11 @@
                 </ImageView>
          </graphic>
         </Button>
+<<<<<<< HEAD:Dictionary_Project/src/main/resources/App/DictionaryGUI.fxml
       <Button layoutX="10.0" layoutY="271.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="29.0" style="-fx-background-color: pink;">
+=======
+      <Button layoutX="14.0" layoutY="275.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="29.0" style="-fx-background-color: pink;">
+>>>>>>> parent of dafcf18 (abc):Dictionary_Project/src/main/resources/Views/DictionaryGUI.fxml
          <tooltip>
             <Tooltip text="Dịch nghĩa" />
          </tooltip>
@@ -48,7 +62,20 @@
             </ImageView>
          </graphic>
       </Button>
+<<<<<<< HEAD:Dictionary_Project/src/main/resources/App/DictionaryGUI.fxml
       <Button layoutX="4.0" layoutY="334.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="40.0" style="-fx-background-color: pink;">
+=======
+      <Pane layoutX="73.0" layoutY="15.0" prefHeight="586.0" prefWidth="780.0">
+         <children>
+              <ImageView accessibleRole="PARENT" fitHeight="595.0" fitWidth="781.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../../../../../../../../Downloads/387472848_2634258193397479_5820426671132712346_n.jpg" />
+                  </image>
+              </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="7.0" layoutY="320.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="40.0" style="-fx-background-color: pink;">
+>>>>>>> parent of dafcf18 (abc):Dictionary_Project/src/main/resources/Views/DictionaryGUI.fxml
          <tooltip>
             <Tooltip text="Chỉnh sửa" />
          </tooltip>
@@ -60,6 +87,7 @@
             </ImageView>
          </graphic>
       </Button>
+<<<<<<< HEAD:Dictionary_Project/src/main/resources/App/DictionaryGUI.fxml
       <Button layoutX="8.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: pink;">
          <tooltip>
             <Tooltip text="Thoát" />
@@ -73,6 +101,9 @@
          </graphic>
       </Button>
       <Button layoutX="6.0" layoutY="400.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="33.0" style="-fx-background-color: pink;">
+=======
+      <Button layoutX="9.0" layoutY="371.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="33.0" style="-fx-background-color: pink;">
+>>>>>>> parent of dafcf18 (abc):Dictionary_Project/src/main/resources/Views/DictionaryGUI.fxml
          <graphic>
             <ImageView fitHeight="78.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -84,6 +115,7 @@
             <Tooltip text="Xoá từ" />
          </tooltip>
       </Button>
+<<<<<<< HEAD:Dictionary_Project/src/main/resources/App/DictionaryGUI.fxml
       <AnchorPane layoutX="72.0" layoutY="14.0" prefHeight="587.0" prefWidth="781.0">
          <children>
               <ImageView accessibleRole="PARENT" fitHeight="595.0" fitWidth="781.0" pickOnBounds="true" preserveRatio="true">
@@ -95,3 +127,7 @@
       </AnchorPane>
    </children>
 </AnchorPane>
+=======
+    </children>
+</Pane>
+>>>>>>> parent of dafcf18 (abc):Dictionary_Project/src/main/resources/Views/DictionaryGUI.fxml

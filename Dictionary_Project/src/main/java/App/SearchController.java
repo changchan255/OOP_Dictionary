@@ -1,7 +1,6 @@
-package com.example.demo1;
-
+package App;
 import DictionaryCmdLine.Dictionary;
-import DictionarCmdLine.DictionaryManagement;
+import DictionaryCmdLine.DictionaryManagement;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
