@@ -11,8 +11,8 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class DictionaryApplication extends Application {
-    private double xOffset = 0;
-    private double yOffset = 0;
+    private double x;
+    private double y;
 
     public static void main(String[] args) {
         launch(args);
@@ -20,22 +20,22 @@ public class DictionaryApplication extends Application {
 
     @Override
     public void start(final Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/App/DictionaryGui.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("DictionaryGUI.fxml"));
         stage.setTitle("Dictionary Application");
         stage.initStyle(StageStyle.TRANSPARENT);
         root.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                xOffset = event.getSceneX();
-                yOffset = event.getSceneY();
+                x = event.getSceneX();
+                y = event.getSceneY();
             }
         });
 
         root.setOnMouseDragged(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                stage.setX(event.getScreenX() - xOffset);
-                stage.setY(event.getScreenY() - yOffset);
+                stage.setX(event.getScreenX() - x);
+                stage.setY(event.getScreenY() - y);
             }
         });
 
