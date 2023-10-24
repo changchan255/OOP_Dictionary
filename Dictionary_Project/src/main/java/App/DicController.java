@@ -8,7 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 
 import java.io.IOException;
@@ -23,7 +23,7 @@ public class DicController implements Initializable {
     private Button exitButton, searchButton, addButton, transButton, gameButton;
 
     @FXML
-    private Pane container;
+    private AnchorPane container;
 
     private void setNode(Node node) {
         container.getChildren().clear();
@@ -33,8 +33,8 @@ public class DicController implements Initializable {
     @FXML
     private void showComponent(String path) {
         try {
-            Pane pane = FXMLLoader.load(getClass().getResource(path));
-            setNode(pane);
+            AnchorPane anchorPane = FXMLLoader.load(getClass().getResource(path));
+            setNode(anchorPane);
         } catch (IOException e) {
             e.printStackTrace();
         }
