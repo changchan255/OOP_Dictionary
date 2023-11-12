@@ -17,7 +17,7 @@ import java.util.ResourceBundle;
 
 public class DicController implements Initializable {
     @FXML
-    private Tooltip tooltip1, tooltip2, tooltip3, tooltip4;
+    private Tooltip tooltip1, tooltip2, tooltip3, tooltip4, tooltip5, tooltip6;
 
     @FXML
     private Button exitButton, searchButton, addButton, transButton, gameButton;
@@ -51,22 +51,22 @@ public class DicController implements Initializable {
             }
         });
 
-        searchButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                showComponent("");
-            }
-        });
+//        searchButton.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent actionEvent) {
+//                showComponent("");
+//            }
+//        });
+//
+//        transButton.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent actionEvent) {
+//                showComponent("");
+//            }
+//        });
 
-        transButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                showComponent("");
-            }
-        });
-
-        tooltip1.setShowDelay(Duration.seconds(0.5));
-        tooltip2.setShowDelay(Duration.seconds(0.5));
+//        tooltip1.setShowDelay(Duration.seconds(0.5));
+//        tooltip2.setShowDelay(Duration.seconds(0.5));
         tooltip3.setShowDelay(Duration.seconds(0.5));
 
         exitButton.setOnMouseClicked(e -> {

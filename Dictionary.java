@@ -1,4 +1,3 @@
-package DictionaryCmdLine;
 
 import java.util.ArrayList;
 
