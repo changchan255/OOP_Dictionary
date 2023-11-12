@@ -73,9 +73,24 @@ public class AddController implements Initializable {
 
 //                int x = dictionaryManagement.dictionaryLookup();
                 if (optional1.get() == replaceExplain) {
-                    dictionaryManagement.dictionaryUpdate(dictionary, target, explain, path);
+                    dictionaryManagement.dictionaryUpdate_replace(dictionary, target, explain, path);
+                }
+                else if (optional1.get() == addExplain) {
+                    dictionaryManagement.dictionaryUpdate_add(dictionary, target, explain, path);
+                }
+                else if (optional1.get() == ButtonType.CANCEL) {
+                    Alert end = new Alert(Alert.AlertType.INFORMATION);
+                    end.setTitle(null);
+                    end.setHeaderText(null);
+                    end.setContentText("Thay đổi không được lưu!");
                 }
             }
+            else {
+                dictionaryManagement.dictionaryAdd(dictionary, target, explain, path);
+            }
+            addbtn.setDisable(true);
+            addtarget.setText("");
+            addexplain.setText("");
         }
 
     }

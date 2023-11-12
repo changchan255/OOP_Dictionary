@@ -44,10 +44,19 @@ public class DictionaryManagement {
         dictionaryExportToFile(dictionary, path);
     }
 
-    public void dictionaryUpdate(Dictionary dictionary, String t, String e, String path) {
+    public void dictionaryUpdate_replace(Dictionary dictionary, String t, String e, String path) {
         int tmp = mp.get(t).getValue();
         mp.replace(t, new Pair(e, tmp));
         dictionary.get(tmp).setWord_explain(e);
+        dictionaryExportToFile(dictionary, path);
+    }
+
+    public void dictionaryUpdate_add(Dictionary dictionary, String t, String e, String path) {
+        int tmp = mp.get(t).getValue();
+        String oldExplain = dictionary.get(tmp).getWord_explain();
+        dictionary.get(tmp).setWord_explain( oldExplain + e);
+        mp.replace(t, new Pair(oldExplain + e, tmp));
+
         dictionaryExportToFile(dictionary, path);
     }
 

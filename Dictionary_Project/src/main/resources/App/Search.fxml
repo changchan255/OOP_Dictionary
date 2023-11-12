@@ -8,69 +8,44 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.24169921875" prefWidth="677.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <children>
-    <Pane layoutX="29.0" layoutY="23.0" prefHeight="440.0" prefWidth="622.0" />
-    <ImageView fitHeight="453.44082557943767" fitWidth="604.194580078125" layoutX="36.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../Utils/Images/z4871806942228_fba99d38ad52c9e835ad9ccee0e9cda0.jpg" />
-      </image>
-    </ImageView>
-    <ImageView fitHeight="33.68283722439217" fitWidth="44.884521484375" layoutX="46.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../Utils/Icons/393675583_689612106455003_2558189402138978978_n_preview_rev_1.png" />
-      </image>
-    </ImageView>
-    <ImageView fitHeight="37.4956668628978" fitWidth="49.965354919433594" layoutX="43.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../Utils/Icons/394014915_340470148384840_5196441924277844299_n_preview_rev_1.png" />
-      </image>
-    </ImageView>
-    <ImageView fitHeight="37.49566650390625" fitWidth="49.9653557124734" layoutX="43.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../Utils/Icons/393970623_1049042636222225_9214420721455033625_n_preview_rev_1.png" />
-      </image>
-    </ImageView>
-    <ImageView fitHeight="37.49567163413445" fitWidth="49.965362548828125" layoutX="43.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../Utils/Icons/393941941_1314072476141608_95374284562799746_n_preview_rev_1.png" />
-      </image>
-    </ImageView>
-    <ImageView fitHeight="37.49567163413445" fitWidth="49.965362548828125" layoutX="43.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../Utils/Icons/394170820_2703388049813401_8845347354059545183_n_preview_rev_1.png" />
-      </image>
-    </ImageView>
-    <ImageView fitHeight="174.49566650390625" fitWidth="232.5265476838182" layoutX="122.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../Utils/Icons/387459005_242231655168421_8652399507377793243_n_preview_rev_1.png" />
-      </image>
-    </ImageView>
-    <TextField alignment="CENTER" layoutX="155.0" layoutY="120.0" prefHeight="23.0" prefWidth="148.0" promptText="Nhập để tìm kiếm" text="" />
-    <Text layoutX="384.0" layoutY="138.0" scaleX="1.4114432658309226" scaleY="1.152814488497308" strokeType="OUTSIDE" strokeWidth="0.0" text="Economy" />
-    <ImageView fitHeight="25.708805205610652" fitWidth="29.864322662353516" layoutX="472.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../Utils/Icons/394270203_688020799926263_2455990212280674994_n_preview_rev_1.png" />
-      </image>
-    </ImageView>
-    <ImageView fitHeight="33.6828338753662" fitWidth="44.88451385498047" layoutX="513.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../Utils/Icons/393975206_1490124065154283_3999117171916904617_n_preview_rev_1.png" />
-      </image>
-    </ImageView>
-    <ImageView fitHeight="39.74696255162432" fitWidth="52.96535110473633" layoutX="535.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../Utils/Icons/393828180_1171045180950170_2139145134810809939_n_preview_rev_1.png" />
-      </image>
-    </ImageView>
-    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
-    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="55.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
-    <ImageView fitHeight="31.431630172172376" fitWidth="41.8846435546875" layoutX="567.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@../Utils/Icons/387417861_2958599520943935_3863135519158486620_n_preview_rev_1.png" />
-      </image>
-    </ImageView>
-    <TextArea layoutX="388.0" layoutY="169.0" prefHeight="230.0" prefWidth="200.0" text="Danh từ&#10;Cần kiệm&#10;Hà tiện&#10;Tiết kiệm" wrapText="true" />
-    <ListView layoutX="148.0" layoutY="172.0" prefHeight="231.0" prefWidth="177.0" />
+    <Pane layoutX="23.0" layoutY="14.0" prefHeight="372.0" prefWidth="254.0" style="-fx-background-color: pink ;">
+      <children>
+        <ImageView fitHeight="200.27903073918412" fitWidth="266.884521484375" layoutX="-6.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../Utils/Icons/387459005_242231655168421_8652399507377793243_n_preview_rev_1.png" />
+          </image>
+        </ImageView>
+        <TextField layoutX="20.0" layoutY="26.0" prefWidth="184.0" promptText="Nhập để tìm kiếm" />
+        <ListView layoutX="20.0" layoutY="80.0" prefHeight="258.0" prefWidth="213.0" />
+      </children>
+    </Pane>
+    <Pane layoutX="291.0" layoutY="14.0" prefHeight="372.0" prefWidth="286.0" style="-fx-background-color: pink;">
+      <children>
+        <Text layoutX="29.0" layoutY="30.0" scaleX="1.5266472595506344" scaleY="1.3523870682243702" strokeType="OUTSIDE" strokeWidth="0.0" text="Economy" />
+        <ImageView fitHeight="25.95117950439453" fitWidth="30.145873530958134" layoutX="120.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../Utils/Icons/394270203_688020799926263_2455990212280674994_n_preview_rev_1.png" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="33.68283731411314" fitWidth="44.884521484375" layoutX="177.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../Utils/Icons/393975206_1490124065154283_3999117171916904617_n_preview_rev_1.png" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="30.705169677734375" fitWidth="40.91659010876102" layoutX="238.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../Utils/Icons/387417861_2958599520943935_3863135519158486620_n_preview_rev_1.png" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="36.77122928325105" fitWidth="49.0" layoutX="202.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../Utils/Icons/393828180_1171045180950170_2139145134810809939_n_preview_rev_1.png" />
+          </image>
+        </ImageView>
+        <TextArea layoutX="24.0" layoutY="81.0" prefHeight="256.9998779296875" prefWidth="237.91664804687753" text="Danh từ&#10;Cần kiệm&#10;Hà tiện&#10;Tiết kiệm" wrapText="true" />
+      </children>
+    </Pane>
   </children>
 </AnchorPane>
