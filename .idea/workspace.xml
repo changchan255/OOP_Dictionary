@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a99c189-d7e4-4406-abce-d9db3a1198f7" name="Changes" comment="">
-      <changelist_data name="Le Van Hung" email="hungneit@gmail.com" />
+    <list default="true" id="8a99c189-d7e4-4406-abce-d9db3a1198f7" name="Changes" comment="up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary_Project/src/main/resources/App/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary_Project/src/main/resources/App/Search.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +20,18 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Le Van Hung &lt;hungneit@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -84,8 +93,18 @@
       <workItem from="1699734878203" duration="403000" />
       <workItem from="1699756720153" duration="1119000" />
       <workItem from="1699803937571" duration="1275000" />
-      <workItem from="1699809500402" duration="2142000" />
+      <workItem from="1699809500402" duration="2985000" />
+      <workItem from="1699964032560" duration="1713000" />
     </task>
+    <task id="LOCAL-00001" summary="up">
+      <option name="closed" value="true" />
+      <created>1699813305972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699813305972</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
