@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="781.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="781.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.AddController">
    <children>
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="64.0" prefWidth="755.0" style="-fx-background-color: pink;">
          <children>
@@ -39,7 +39,7 @@
                </font>
             </Label>
             <TextArea fx:id="addexplain" layoutX="14.0" layoutY="140.0" prefHeight="227.0" prefWidth="359.0" promptText="Nhập giải nghĩa của từ..." />
-            <Button fx:id="addbtn" layoutX="14.0" layoutY="392.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="Thêm từ" textFill="#4030d0">
+            <Button fx:id="addbtn" layoutX="14.0" layoutY="392.0" mnemonicParsing="false" onAction="#handleaddbutton" prefHeight="26.0" prefWidth="80.0" text="Thêm từ" textFill="#4030d0">
                <font>
                   <Font size="15.0" />
                </font>

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.24169921875" prefWidth="677.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.24169921875" prefWidth="677.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <Pane layoutX="29.0" layoutY="23.0" prefHeight="440.0" prefWidth="622.0" />
     <ImageView fitHeight="453.44082557943767" fitWidth="604.194580078125" layoutX="36.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
@@ -64,7 +61,6 @@
       </image>
     </ImageView>
     <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
-    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="55.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
     <ImageView fitHeight="31.431630172172376" fitWidth="41.8846435546875" layoutX="567.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../Utils/Icons/387417861_2958599520943935_3863135519158486620_n_preview_rev_1.png" />
