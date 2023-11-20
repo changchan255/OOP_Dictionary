@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <Pane layoutX="23.0" layoutY="14.0" prefHeight="372.0" prefWidth="254.0" style="-fx-background-color: pink ;">
       <children>
@@ -17,13 +14,13 @@
             <Image url="@../Utils/Icons/387459005_242231655168421_8652399507377793243_n_preview_rev_1.png" />
           </image>
         </ImageView>
-        <TextField layoutX="20.0" layoutY="26.0" prefWidth="184.0" promptText="Nhập để tìm kiếm" />
-        <ListView layoutX="20.0" layoutY="80.0" prefHeight="258.0" prefWidth="213.0" />
+        <TextField fx:id="searchField" layoutX="20.0" layoutY="26.0" prefWidth="184.0" promptText="Nhập để tìm kiếm" />
+        <ListView fx:id="searchList" layoutX="20.0" layoutY="80.0" prefHeight="258.0" prefWidth="213.0" />
       </children>
     </Pane>
     <Pane layoutX="291.0" layoutY="14.0" prefHeight="372.0" prefWidth="286.0" style="-fx-background-color: pink;">
       <children>
-        <Text layoutX="29.0" layoutY="30.0" scaleX="1.5266472595506344" scaleY="1.3523870682243702" strokeType="OUTSIDE" strokeWidth="0.0" text="Economy" />
+        <Text fx:id="searchedWord" layoutX="29.0" layoutY="30.0" scaleX="1.5266472595506344" scaleY="1.3523870682243702" strokeType="OUTSIDE" strokeWidth="0.0" text="Economy" />
         <ImageView fitHeight="25.95117950439453" fitWidth="30.145873530958134" layoutX="120.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
           <image>
             <Image url="@../Utils/Icons/394270203_688020799926263_2455990212280674994_n_preview_rev_1.png" />
@@ -44,7 +41,7 @@
             <Image url="@../Utils/Icons/393828180_1171045180950170_2139145134810809939_n_preview_rev_1.png" />
           </image>
         </ImageView>
-        <TextArea layoutX="24.0" layoutY="81.0" prefHeight="256.9998779296875" prefWidth="237.91664804687753" text="Danh từ&#10;Cần kiệm&#10;Hà tiện&#10;Tiết kiệm" wrapText="true" />
+        <TextArea fx:id="explainField" layoutX="24.0" layoutY="81.0" prefHeight="256.9998779296875" prefWidth="237.91664804687753" text="Danh từ&#10;Cần kiệm&#10;Hà tiện&#10;Tiết kiệm" wrapText="true" />
       </children>
     </Pane>
   </children>
