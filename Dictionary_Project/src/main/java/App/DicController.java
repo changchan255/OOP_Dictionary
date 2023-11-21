@@ -54,7 +54,7 @@ public class DicController implements Initializable {
 //        searchButton.setOnAction(new EventHandler<ActionEvent>() {
 //            @Override
 //            public void handle(ActionEvent actionEvent) {
-//                showComponent("");
+//                showComponent("/Search.fxml");
 //            }
 //        });
 //
