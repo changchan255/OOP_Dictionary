@@ -24,6 +24,9 @@
                     </image>
                 </ImageView>
          </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
         </Button>
         <Button fx:id="addButton" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="6.0" layoutY="209.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="43.0" style="-fx-background-color: pink;">
             <tooltip>
@@ -51,18 +54,17 @@
                </image>
             </ImageView>
          </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <Button layoutX="4.0" layoutY="334.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="40.0" style="-fx-background-color: pink;">
+      <Button fx:id="gameButton" layoutX="4.0" layoutY="334.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="57.0" style="-fx-background-color: pink;">
          <tooltip>
-            <Tooltip fx:id="tooltip5" text="Chỉnh sửa" />
+            <Tooltip fx:id="tooltip5" text="Trắc nghiệm" />
          </tooltip>
-         <graphic>
-            <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Utils/Icons/update.png" />
-               </image>
-            </ImageView>
-         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Button fx:id="exitButton" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="8.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: pink;">
          <tooltip>
@@ -100,5 +102,10 @@
               </ImageView>
          </children>
       </AnchorPane>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="15.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utils/Icons/game.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

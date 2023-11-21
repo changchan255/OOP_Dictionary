@@ -66,7 +66,7 @@ public class AddController implements Initializable {
 
         if (optional.get() == ok) {
             Word w = new Word(target, explain);
-            if (!dictionaryManagement.dictionaryLookup(target).equals("null")) {
+            if (dictionaryManagement.dictionaryLookup(target) != null) {
                 Alert select = new Alert(Alert.AlertType.WARNING);
                 select.setTitle("Warning!");
                 select.setHeaderText(null);

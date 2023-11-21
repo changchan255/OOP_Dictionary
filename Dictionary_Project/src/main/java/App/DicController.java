@@ -51,23 +51,34 @@ public class DicController implements Initializable {
             }
         });
 
-//        searchButton.setOnAction(new EventHandler<ActionEvent>() {
-//            @Override
-//            public void handle(ActionEvent actionEvent) {
-//                showComponent("/Search.fxml");
-//            }
-//        });
-//
-//        transButton.setOnAction(new EventHandler<ActionEvent>() {
-//            @Override
-//            public void handle(ActionEvent actionEvent) {
-//                showComponent("");
-//            }
-//        });
 
-//        tooltip1.setShowDelay(Duration.seconds(0.5));
-//        tooltip2.setShowDelay(Duration.seconds(0.5));
+        searchButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                showComponent("Search.fxml");
+            }
+        });
+
+
+        transButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                showComponent("Translate.fxml");
+            }
+        });
+        gameButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                showComponent("MultigameGUI.fxml");
+            }
+        });
+
+        tooltip1.setShowDelay(Duration.seconds(0.5));
+        tooltip2.setShowDelay(Duration.seconds(0.5));
         tooltip3.setShowDelay(Duration.seconds(0.5));
+        tooltip4.setShowDelay(Duration.seconds(0.5));
+        tooltip5.setShowDelay(Duration.seconds(0.5));
+//        tooltip3.setShowDelay(Duration.seconds(0.5));
 
         exitButton.setOnMouseClicked(e -> {
             System.exit(0);

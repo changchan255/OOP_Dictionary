@@ -15,7 +15,7 @@ public class DictionaryManagement {
     private Trie trie = new Trie();
 
     public String dictionaryLookup(String t) {
-        if (mp.get(t).getKey() == null) {
+        if (!mp.containsKey(t)) {
             return null;
         }
         return mp.get(t).getKey();

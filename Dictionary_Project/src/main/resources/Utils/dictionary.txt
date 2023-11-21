@@ -2,7 +2,8 @@ hello	chào
 action	hoat dong
 house	ngoi nha
 bring	mang
-calculate	tinh
-welcome	chao
-advance	nang cao
-push	nhấn
+calculate	tính toán
+welcome	chào mừng
+advance	nâng cao
+push	nhấn vào
+break	phá vỡ
