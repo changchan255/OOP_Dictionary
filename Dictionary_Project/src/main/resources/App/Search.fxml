@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.SearchController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="App.SearchController">
   <children>
     <Pane layoutX="23.0" layoutY="14.0" prefHeight="372.0" prefWidth="254.0" style="-fx-background-color: pink ;">
       <children>
@@ -21,28 +22,32 @@
     <Pane layoutX="291.0" layoutY="14.0" prefHeight="372.0" prefWidth="286.0" style="-fx-background-color: pink;">
       <children>
         <Text fx:id="searchedWord" layoutX="29.0" layoutY="30.0" scaleX="1.5266472595506344" scaleY="1.3523870682243702" strokeType="OUTSIDE" strokeWidth="0.0" text="Economy" />
-        <ImageView fitHeight="25.95117950439453" fitWidth="30.145873530958134" layoutX="120.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+        <TextArea fx:id="explainField" layoutX="24.0" layoutY="81.0" prefHeight="256.9998779296875" prefWidth="237.91664804687753" text="Danh từ&#10;Cần kiệm&#10;Hà tiện&#10;Tiết kiệm" wrapText="true" />
+        <Button disable="false" layoutX="109.0" layoutY="10.0" minHeight="25.951171875" minWidth="30.1458740234375" mnemonicParsing="false" prefHeight="26.981689453125" prefWidth="40.66839599609375" text="" textFill="BLACK" />
+        <ImageView fitHeight="22.957580774330438" fitWidth="26.66839599609375" layoutX="116.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
           <image>
             <Image url="@../Utils/Icons/394270203_688020799926263_2455990212280674994_n_preview_rev_1.png" />
           </image>
         </ImageView>
-        <ImageView fitHeight="33.68283731411314" fitWidth="44.884521484375" layoutX="177.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
-          <image>
-            <Image url="@../Utils/Icons/393975206_1490124065154283_3999117171916904617_n_preview_rev_1.png" />
-          </image>
-        </ImageView>
-        <ImageView fitHeight="30.705169677734375" fitWidth="40.91659010876102" layoutX="238.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-          <image>
-            <Image url="@../Utils/Icons/387417861_2958599520943935_3863135519158486620_n_preview_rev_1.png" />
-          </image>
-        </ImageView>
-        <ImageView fitHeight="36.77122928325105" fitWidth="49.0" layoutX="202.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+        <Button layoutX="170.0" layoutY="5.0" minWidth="26.66839599609375" mnemonicParsing="false" prefHeight="37.0" prefWidth="35.0" text="Button" />
+        <Button layoutX="204.0" layoutY="5.0" minWidth="34.99993896484375" mnemonicParsing="false" prefHeight="37.0" prefWidth="34.99993896484375" text="Button" />
+        <Button layoutX="237.0" layoutY="5.0" minWidth="35.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="35.0" text="Button" />
+        <ImageView fitHeight="33.769440973897645" fitWidth="44.99992370605469" layoutX="199.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
           <image>
             <Image url="@../Utils/Icons/393828180_1171045180950170_2139145134810809939_n_preview_rev_1.png" />
           </image>
         </ImageView>
-        <TextArea fx:id="explainField" layoutX="24.0" layoutY="81.0" prefHeight="256.9998779296875" prefWidth="237.91664804687753" text="Danh từ&#10;Cần kiệm&#10;Hà tiện&#10;Tiết kiệm" wrapText="true" />
+        <ImageView fitHeight="26.26521989179843" fitWidth="35.00007629394531" layoutX="237.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../Utils/Icons/387417861_2958599520943935_3863135519158486620_n_preview_rev_1.png" />
+          </image>
+        </ImageView>
       </children>
     </Pane>
+    <ImageView fitHeight="30.017362305490586" fitWidth="40.00004196166992" layoutX="461.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Utils/Icons/393975206_1490124065154283_3999117171916904617_n_preview_rev_1.png" />
+      </image>
+    </ImageView>
   </children>
 </AnchorPane>

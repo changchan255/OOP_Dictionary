@@ -33,6 +33,8 @@ public class SearchController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         dictionaryManagement.insertFromCommandline(dictionary, path);
+        dictionaryManagement.addAllTrie(dictionary);
+        setListDefault(0);
 
         searchField.setOnKeyTyped(new EventHandler<KeyEvent>() {
             @Override
