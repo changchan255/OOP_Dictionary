@@ -7,7 +7,6 @@
     <list default="true" id="8a99c189-d7e4-4406-abce-d9db3a1198f7" name="Changes" comment="fixed the spacetime hole">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary_Project/src/main/java/App/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary_Project/src/main/java/App/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary_Project/src/main/resources/App/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary_Project/src/main/resources/App/Search.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697810554772</updated>
-      <workItem from="1700748250352" duration="2564000" />
+      <workItem from="1700748250352" duration="4015000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the spacetime hole">
       <option name="closed" value="true" />
@@ -61,7 +60,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700494102176</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed the spacetime hole">
+      <option name="closed" value="true" />
+      <created>1700753089466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700753089466</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
