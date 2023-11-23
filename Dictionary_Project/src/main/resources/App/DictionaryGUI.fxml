@@ -65,6 +65,13 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Icons/game.png" />
+               </image>
+            </ImageView>
+         </graphic>
       </Button>
       <Button fx:id="exitButton" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="8.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: pink;">
          <tooltip>
@@ -102,10 +109,5 @@
               </ImageView>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="15.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Utils/Icons/game.png" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>

@@ -1,5 +1,7 @@
 package DictionaryCmdLine;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.util.Pair;
 
 import java.io.File;
@@ -25,7 +27,7 @@ public class DictionaryManagement {
         try {
             List<String> allText = Files.readAllLines(f.toPath(), StandardCharsets.UTF_8);
             for (String line : allText) {
-                String[] word = line.split("\t");
+                String[] word = line.split(" : ");
                 String t = word[0];
                 String e = word[1];
                 Word w = new Word(t, e);
@@ -73,7 +75,7 @@ public class DictionaryManagement {
         try {
             PrintWriter pw = new PrintWriter(path,"UTF-8");
             for (Word w:dictionary) {
-                pw.println(w.getWord_target() + "\t" + w.getWord_explain());
+                pw.println(w.getWord_target() + " : " + w.getWord_explain());
             }
             pw.close();
         }
@@ -92,9 +94,9 @@ public class DictionaryManagement {
         }
     }
 
-    public List<String> dictionarySearcher(Dictionary dictionary, String t) {
+    public ObservableList<String> dictionarySearcher(Dictionary dictionary, String t) {
         List<String> list = trie.searchWithPrefix(t);
-        List<String> result = new ArrayList<>();
+        ObservableList<String> result = FXCollections.observableArrayList();
         for (int i = 0; i < Math.min(10, list.size()); i++) {
             result.add(list.get(i));
         }

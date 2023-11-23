@@ -5,20 +5,20 @@ class TrieNode {
     private boolean isEndOfWord;
 
     public TrieNode() {
-        children = new TrieNode[26]; // 26 chữ cái trong tiếng Anh
+        children = new TrieNode[127]; // 26 chữ cái trong tiếng Anh
         isEndOfWord = false;
     }
 
     public boolean containsKey(char ch) {
-        return children[ch - 'a'] != null;
+        return children[ch - ' '] != null;
     }
 
     public TrieNode get(char ch) {
-        return children[ch - 'a'];
+        return children[ch - ' '];
     }
 
     public void put(char ch, TrieNode node) {
-        children[ch - 'a'] = node;
+        children[ch - ' '] = node;
     }
 
     public boolean isEndOfWord() {
