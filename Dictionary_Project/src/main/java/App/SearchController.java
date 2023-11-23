@@ -17,6 +17,10 @@ public class SearchController implements Initializable {
     private DictionaryManagement dictionaryManagement = new DictionaryManagement();
     private final String path = "Dictionary_Project/src/main/resources/Utils/dictionary.txt";
 
+    ObservableList<String> list = FXCollections.observableArrayList();
+
+    private int firstIndexOfSearchList = 0;
+
     Alert alert = new Alert(Alert.AlertType.NONE);
 
 
@@ -53,15 +57,26 @@ public class SearchController implements Initializable {
 
     }
 
+    @FXML
+    private void handleOnKeyTyped() {
+        list.clear();
+        String searchKey = searchField.getText().trim();
+        list = dictionaryManagement.dictionarySearcher(dictionary, searchKey);
+        if (list.isEmpty()) {
+            setListDefault(firstIndexOfSearchList);
+        } else {
+            searchList.setItems(list);
+//            firstIndexOfSearchList = dictionaryManagement.searchWord(dictionary, list.get(0));
+        }
+    }
+
 
     private void setListDefault(int index) {
-        if (index == 0) headerList.setText("15 từ đầu tiên");
-        else headerList.setText("Kết quả liên quan");
         list.clear();
-        for (int i = index; i < index + 15; i++) list.add(dictionary.get(i).getWordTarget());
+        for (int i = index; i < index + 10; i++) list.add(dictionary.get(i).getWord_target());
         searchList.setItems(list);
-        searchedWord.setText(dictionary.get(index).getWordTarget());
-        explainField.setText(dictionary.get(index).getWordExplain());
+        searchedWord.setText(dictionary.get(index).getWord_target());
+        explainField.setText(dictionary.get(index).getWord_explain());
     }
 
 //    @FXML
@@ -97,7 +112,7 @@ public class SearchController implements Initializable {
     private TextArea explainField;
 
     @FXML
-    private Label searchedWord;
+    private Text searchedWord;
 
     @FXML
     private Button soundBtn, editBtn, removeBtn, saveBtn;
