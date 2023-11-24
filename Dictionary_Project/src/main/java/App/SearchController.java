@@ -86,6 +86,17 @@ public class SearchController implements Initializable {
         explainField.setText(dictionary.get(index).getWord_explain());
     }
 
+    @FXML
+    private void handleClickSearchedWord(MouseEvent arg0) {
+        String clickedWord = searchList.getSelectionModel().getSelectedItem();
+        if (clickedWord != null) {
+            searchedWord.setText(clickedWord);
+            explainField.setText(dictionaryManagement.dictionaryLookup(clickedWord));
+            explainField.setVisible(true);
+            explainField.setEditable(false);
+        }
+    }
+
 //    @FXML
 //    private void handleClickRemoveBtn() {
 //        ButtonType yes = new ButtonType("Có", ButtonBar.ButtonData.OK_DONE);
@@ -119,7 +130,7 @@ public class SearchController implements Initializable {
     private TextArea explainField;
 
     @FXML
-    private Text searchedWord;
+    private Label searchedWord;
 
     @FXML
     private Button soundBtn, editBtn, removeBtn, saveBtn;
