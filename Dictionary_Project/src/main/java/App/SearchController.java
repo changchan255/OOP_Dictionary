@@ -97,27 +97,43 @@ public class SearchController implements Initializable {
         }
     }
 
-//    @FXML
-//    private void handleClickRemoveBtn() {
-//        ButtonType yes = new ButtonType("Có", ButtonBar.ButtonData.OK_DONE);
-//        ButtonType no = new ButtonType("Không", ButtonBar.ButtonData.CANCEL_CLOSE);
-//        alert.setAlertType(Alert.AlertType.CONFIRMATION);
-//        alert.getButtonTypes().setAll(yes, no);
-//        alert.setTitle("Xác nhận");
-//        alert.setHeaderText("Hãy thật sự chắc chắn nhé");
-//        alert.setContentText("Bạn chắc chắn muốn xóa từ này?");
-//        alert.showAndWait();
-//
-//        if (alert.getResult() == yes) {
-//            dictionaryManagement.dictionaryRemove();
-//            alert.setAlertType(Alert.AlertType.INFORMATION);
-//            alert.setTitle("Thông báo");
-//            alert.setHeaderText(null);
-//            alert.setContentText("Đã xóa thành công!");
-//            alert.showAndWait();
-//
-//        }
-//    }
+     @FXML
+    private void handleClickRemoveBtn() {
+        ButtonType yes = new ButtonType("Có", ButtonBar.ButtonData.OK_DONE);
+        ButtonType no = new ButtonType("Không", ButtonBar.ButtonData.CANCEL_CLOSE);
+        alert.setAlertType(Alert.AlertType.CONFIRMATION);
+        alert.getButtonTypes().setAll(yes, no);
+        alert.setTitle("Xác nhận");
+        alert.setHeaderText("Hãy thật sự chắc chắn nhé");
+        alert.setContentText("Bạn chắc chắn muốn xóa từ này?");
+        alert.showAndWait();
+
+        if (alert.getResult() == yes) {
+            dictionaryManagement.dictionaryRemove(dictionary, searchedWord.getText(), path);
+            updateAfterRemoving();
+            alert.setAlertType(Alert.AlertType.INFORMATION);
+            alert.setTitle("Thông báo");
+            alert.setHeaderText(null);
+            alert.setContentText("Đã xóa thành công!");
+            alert.showAndWait();
+
+        } else {
+            alert.setAlertType(Alert.AlertType.INFORMATION);
+            alert.setTitle("Thông báo");
+            alert.setContentText("Thao tác đã bị hủy");
+            alert.showAndWait();
+        }
+    }
+
+    private void updateAfterRemoving() {
+        for (int i = 0; i < list.size(); i++)
+            if (list.get(i).equals(searchedWord.getText())) {
+                list.remove(i);
+                break;
+            }
+        searchList.setItems(list);
+        explainField.setVisible(false);
+    }
 
     @FXML
     private TextField searchField;
