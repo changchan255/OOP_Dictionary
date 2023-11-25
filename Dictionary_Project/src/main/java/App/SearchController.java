@@ -60,7 +60,7 @@ public class SearchController implements Initializable {
 //        });
 
         explainField.setEditable(false);
-
+        saveBtn.setVisible(false);
 
     }
 
@@ -133,6 +133,43 @@ public class SearchController implements Initializable {
             }
         searchList.setItems(list);
         explainField.setVisible(false);
+    }
+
+    @FXML
+    private void handleClickEditBtn() {
+        explainField.setEditable(true);
+        saveBtn.setVisible(true);
+        alert.setAlertType(Alert.AlertType.INFORMATION);
+        alert.setTitle("Thông báo");
+        alert.setContentText("Bạn có thể chỉnh sửa nghĩa của từ này");
+        alert.showAndWait();
+    }
+
+    @FXML
+    private void handleClickSaveBtn() {
+        ButtonType yes = new ButtonType("Có", ButtonBar.ButtonData.OK_DONE);
+        ButtonType no = new ButtonType("Không", ButtonBar.ButtonData.CANCEL_CLOSE);
+        alert.setAlertType(Alert.AlertType.CONFIRMATION);
+        alert.getButtonTypes().setAll(yes, no);
+        alert.setTitle("Xác nhận");
+        alert.setHeaderText("Hãy thật sự chắc chắn nhé");
+        alert.setContentText("Bạn chắc chắn muốn cập nhật nghĩa của từ này?");
+        alert.showAndWait();
+        if (alert.getResult() == yes) {
+            dictionaryManagement.dictionaryUpdate_replace(dictionary, searchedWord.getText(), explainField.getText(), path);
+            alert.setAlertType(Alert.AlertType.INFORMATION);
+            alert.setTitle("Thông báo");
+            alert.setHeaderText(null);
+            alert.setContentText("Cập nhật thành công!");
+            alert.showAndWait();
+        } else {
+            alert.setAlertType(Alert.AlertType.INFORMATION);
+            alert.setTitle("Thông báo");
+            alert.setContentText("Thao tác đã bị hủy");
+            alert.showAndWait();
+        }
+        saveBtn.setVisible(false);
+        explainField.setEditable(false);
     }
 
     @FXML
