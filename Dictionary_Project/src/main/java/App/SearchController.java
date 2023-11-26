@@ -17,6 +17,9 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+import com.sun.speech.freetts.Voice;
+import com.sun.speech.freetts.VoiceManager;
+
 public class SearchController implements Initializable {
     private Dictionary dictionary = new Dictionary();
     private DictionaryManagement dictionaryManagement = new DictionaryManagement();
@@ -170,6 +173,20 @@ public class SearchController implements Initializable {
         }
         saveBtn.setVisible(false);
         explainField.setEditable(false);
+    }
+
+    @FXML
+    private void handleClickSoundBtn() {
+        System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+        VoiceManager voiceManager = VoiceManager.getInstance();
+        Voice voice = voiceManager.getVoice("kevin16");
+
+        if (voice != null) {
+            voice.allocate();
+            voice.speak(searchedWord.getText());
+        } else {
+            System.err.println("Không thể tìm thấy giọng: kevin16");
+        }
     }
 
     @FXML
