@@ -14,8 +14,8 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class AddController implements Initializable {
-    Dictionary dictionary = new Dictionary();
-    private DictionaryManagement dictionaryManagement = new DictionaryManagement();
+    private Dictionary dictionary = Dictionary.getInstance();
+    private DictionaryManagement dictionaryManagement = DictionaryManagement.getInstance();
 
     public TextArea addtarget, addexplain;
     public Button addbtn;
@@ -23,7 +23,6 @@ public class AddController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        dictionaryManagement.insertFromCommandline(dictionary, path);
         if (addtarget.getText().isEmpty() || addexplain.getText().isEmpty()) {
             addbtn.setDisable(true);
         }
@@ -78,10 +77,10 @@ public class AddController implements Initializable {
 
 //                int x = dictionaryManagement.dictionaryLookup();
                 if (optional1.get() == replaceExplain) {
-                    dictionaryManagement.dictionaryUpdate_replace(dictionary, target, explain, path);
+                    dictionaryManagement.dictionaryUpdate_replace(dictionary, target, explain);
                 }
                 else if (optional1.get() == addExplain) {
-                    dictionaryManagement.dictionaryUpdate_add(dictionary, target, explain, path);
+                    dictionaryManagement.dictionaryUpdate_add(dictionary, target, explain);
                 }
                 else if (optional1.get() == ButtonType.CANCEL) {
                     Alert end = new Alert(Alert.AlertType.INFORMATION);
@@ -91,7 +90,7 @@ public class AddController implements Initializable {
                 }
             }
             else {
-                dictionaryManagement.dictionaryAdd(dictionary, target, explain, path);
+                dictionaryManagement.dictionaryAdd(dictionary, target, explain);
             }
             addbtn.setDisable(true);
             addtarget.setText("");

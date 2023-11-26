@@ -22,8 +22,8 @@ import com.sun.speech.freetts.VoiceManager;
 import javafx.scene.input.MouseEvent;
 
 public class SearchController implements Initializable {
-    private Dictionary dictionary = new Dictionary();
-    private DictionaryManagement dictionaryManagement = new DictionaryManagement();
+    private Dictionary dictionary = Dictionary.getInstance();
+    private DictionaryManagement dictionaryManagement = DictionaryManagement.getInstance();
     private final String path = "/Users/lehung/Documents/OOP/OOP_Dictionary/Dictionary_Project/src/main/resources/Utils/dictionary.txt";
 
     ObservableList<String> list = FXCollections.observableArrayList();
@@ -36,8 +36,8 @@ public class SearchController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        dictionaryManagement.insertFromCommandline(dictionary, path);
-        dictionaryManagement.addAllTrie(dictionary);
+//        dictionaryManagement.insertFromCommandline(dictionary);
+//        dictionaryManagement.addAllTrie(dictionary);
         setListDefault(0);
 
         searchField.setOnKeyTyped(new EventHandler<KeyEvent>() {
@@ -113,7 +113,7 @@ public class SearchController implements Initializable {
         alert.showAndWait();
 
         if (alert.getResult() == yes) {
-            dictionaryManagement.dictionaryRemove(dictionary, searchedWord.getText(), path);
+            dictionaryManagement.dictionaryRemove(dictionary, searchedWord.getText());
             updateAfterRemoving();
             alert.setAlertType(Alert.AlertType.INFORMATION);
             alert.setTitle("Thông báo");
@@ -160,7 +160,7 @@ public class SearchController implements Initializable {
         alert.setContentText("Bạn chắc chắn muốn cập nhật nghĩa của từ này?");
         alert.showAndWait();
         if (alert.getResult() == yes) {
-            dictionaryManagement.dictionaryUpdate_replace(dictionary, searchedWord.getText(), explainField.getText(), path);
+            dictionaryManagement.dictionaryUpdate_replace(dictionary, searchedWord.getText(), explainField.getText());
             alert.setAlertType(Alert.AlertType.INFORMATION);
             alert.setTitle("Thông báo");
             alert.setHeaderText(null);

@@ -1,5 +1,7 @@
 package App;
 
+import DictionaryCmdLine.Dictionary;
+import DictionaryCmdLine.DictionaryManagement;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -20,6 +22,10 @@ public class DictionaryApplication extends Application {
 
     @Override
     public void start(final Stage stage) throws Exception {
+        Dictionary dictionary = Dictionary.getInstance();
+        DictionaryManagement dictionaryManagement = new DictionaryManagement();
+        dictionaryManagement.insertFromCommandline(dictionary);
+
         Parent root = FXMLLoader.load(getClass().getResource("DictionaryGUI.fxml"));
         stage.setTitle("Dictionary Application");
         stage.initStyle(StageStyle.TRANSPARENT);
