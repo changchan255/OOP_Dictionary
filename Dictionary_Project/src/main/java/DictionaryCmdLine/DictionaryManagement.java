@@ -59,7 +59,7 @@ public class DictionaryManagement {
         int tmp = mp.get(t).getValue();
         String oldExplain = dictionary.get(tmp).getWord_explain();
         dictionary.get(tmp).setWord_explain( oldExplain + e);
-        mp.replace(t, new Pair(oldExplain + e, tmp));
+        mp.replace(t, new Pair(oldExplain + ", " +  e, tmp));
 
         dictionaryExportToFile(dictionary, path);
     }

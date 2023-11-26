@@ -19,11 +19,12 @@ import java.util.ResourceBundle;
 
 import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
+import javafx.scene.input.MouseEvent;
 
 public class SearchController implements Initializable {
     private Dictionary dictionary = new Dictionary();
     private DictionaryManagement dictionaryManagement = new DictionaryManagement();
-    private final String path = "Dictionary_Project/src/main/resources/Utils/dictionary.txt";
+    private final String path = "/Users/lehung/Documents/OOP/OOP_Dictionary/Dictionary_Project/src/main/resources/Utils/dictionary.txt";
 
     ObservableList<String> list = FXCollections.observableArrayList();
 

@@ -1,24 +1,27 @@
 package DictionaryCmdLine;
 
+import java.util.HashMap;
+import java.util.Map;
+
 class TrieNode {
-    private TrieNode[] children;
+    private Map<Character, TrieNode> children;
     private boolean isEndOfWord;
 
     public TrieNode() {
-        children = new TrieNode[127]; // 26 chữ cái trong tiếng Anh
+        children = new HashMap<>();
         isEndOfWord = false;
     }
 
     public boolean containsKey(char ch) {
-        return children[ch - ' '] != null;
+        return children.containsKey(ch);
     }
 
     public TrieNode get(char ch) {
-        return children[ch - ' '];
+        return children.get(ch);
     }
 
     public void put(char ch, TrieNode node) {
-        children[ch - ' '] = node;
+        children.put(ch, node);
     }
 
     public boolean isEndOfWord() {
