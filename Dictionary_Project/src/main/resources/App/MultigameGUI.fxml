@@ -6,76 +6,51 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleGroup?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="781.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.GameController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.GameController">
    <children>
+      <Button fx:id="checkBtn" layoutX="213.0" layoutY="475.0" mnemonicParsing="false" onAction="#onClickcheckBtn" prefHeight="32.0" prefWidth="82.0" text="Submit" />
+      <Button fx:id="nextBtn" layoutX="474.0" layoutY="476.0" mnemonicParsing="false" onAction="#onClicknextBtn" prefHeight="30.0" prefWidth="78.0" text="Next" />
       <Label fx:id="result" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="416.0" prefHeight="52.0" prefWidth="143.0" textFill="#db5539">
          <font>
             <Font size="19.0" />
          </font></Label>
-      <Pane layoutX="176.0" layoutY="126.0" prefHeight="415.0" prefWidth="571.0" style="-fx-background-color: pink;">
+      <VBox layoutX="92.0" layoutY="206.0" prefHeight="200.0" prefWidth="484.0" spacing="30.0" AnchorPane.bottomAnchor="181.0">
          <children>
-            <Label fx:id="question" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="16.0" prefHeight="98.0" prefWidth="515.0">
+            <RadioButton fx:id="choiceA" mnemonicParsing="false">
+               <toggleGroup>
+                  <ToggleGroup fx:id="choice" />
+               </toggleGroup>
                <font>
                   <Font size="16.0" />
-               </font>
-            </Label>
-            <VBox layoutX="50.0" layoutY="134.0" prefHeight="200.0" prefWidth="484.0" spacing="30.0">
-               <children>
-                  <RadioButton fx:id="choiceA" mnemonicParsing="false">
-                     <toggleGroup>
-                        <ToggleGroup fx:id="choice" />
-                     </toggleGroup>
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </RadioButton>
-                  <RadioButton fx:id="choiceB" mnemonicParsing="false" toggleGroup="$choice">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </RadioButton>
-                  <RadioButton fx:id="choiceC" mnemonicParsing="false" toggleGroup="$choice">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </RadioButton>
-                  <RadioButton fx:id="choiceD" mnemonicParsing="false" toggleGroup="$choice">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </RadioButton>
-               </children>
-               <cursor>
-                  <Cursor fx:constant="OPEN_HAND" />
-               </cursor>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-            </VBox>
-            <Button fx:id="checkBtn" layoutX="131.0" layoutY="348.0" mnemonicParsing="false" onAction="#onClickcheckBtn" prefHeight="32.0" prefWidth="82.0" text="Submit" />
-            <Button fx:id="nextBtn" layoutX="387.0" layoutY="350.0" mnemonicParsing="false" onAction="#onClicknextBtn" prefHeight="30.0" prefWidth="78.0" text="Next" />
-         </children>
-      </Pane>
-      <Pane layoutX="27.0" layoutY="33.0" prefHeight="64.0" prefWidth="722.0" style="-fx-background-color: pink;">
-         <children>
-            <Label layoutX="52.0" layoutY="13.0" prefHeight="38.0" prefWidth="255.0" text="MultiChoice Game" textFill="#3522da">
+               </font></RadioButton>
+            <RadioButton fx:id="choiceB" mnemonicParsing="false" toggleGroup="$choice">
                <font>
-                  <Font size="31.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="13.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Utils/Icons/icons8_edit_property_64px.png" />
-               </image>
-            </ImageView>
+                  <Font size="16.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="choiceC" mnemonicParsing="false" toggleGroup="$choice">
+               <font>
+                  <Font size="16.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="choiceD" mnemonicParsing="false" toggleGroup="$choice">
+               <font>
+                  <Font size="16.0" />
+               </font></RadioButton>
          </children>
-      </Pane>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <Label fx:id="question" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="33.0" prefHeight="147.0" prefWidth="652.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

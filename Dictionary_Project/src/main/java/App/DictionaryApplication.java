@@ -22,9 +22,8 @@ public class DictionaryApplication extends Application {
 
     @Override
     public void start(final Stage stage) throws Exception {
-
         Dictionary dictionary = Dictionary.getInstance();
-        DictionaryManagement dictionaryManagement = DictionaryManagement.getInstance();
+        DictionaryManagement dictionaryManagement = new DictionaryManagement();
         dictionaryManagement.insertFromCommandline(dictionary);
 
         Parent root = FXMLLoader.load(getClass().getResource("DictionaryGUI.fxml"));

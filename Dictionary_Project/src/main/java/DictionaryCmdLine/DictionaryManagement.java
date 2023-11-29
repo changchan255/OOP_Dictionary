@@ -83,4 +83,3 @@ private static DictionaryManagement instance;
         return result;
     }
 }
-
