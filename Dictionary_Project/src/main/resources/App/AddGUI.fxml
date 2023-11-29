@@ -11,9 +11,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="781.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.AddController">
    <children>
-      <Pane layoutX="14.0" layoutY="14.0" prefHeight="64.0" prefWidth="755.0" style="-fx-background-color: pink;">
+      <Pane layoutX="39.0" layoutY="29.0" prefHeight="64.0" prefWidth="700.0" style="-fx-background-color: pink;">
          <children>
-            <Label layoutX="52.0" layoutY="13.0" prefHeight="30.0" prefWidth="225.0" text="Thêm từ vựng" textFill="#3522da">
+            <Label layoutX="52.0" layoutY="13.0" prefHeight="30.0" prefWidth="225.0" text="Add word" textFill="#3522da">
                <font>
                   <Font size="31.0" />
                </font>
@@ -25,7 +25,7 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane layoutX="32.0" layoutY="108.0" prefHeight="442.0" prefWidth="384.0" style="-fx-background-color: pink;">
+      <Pane layoutX="40.0" layoutY="118.0" prefHeight="436.0" prefWidth="384.0" style="-fx-background-color: pink;">
          <children>
             <Label layoutX="28.0" layoutY="20.0" text="Từ tiếng Anh" textFill="#2e31dd">
                <font>
@@ -44,14 +44,21 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Label fx:id="successalert" layoutX="159.0" layoutY="397.0" text="Đã thêm từ thành công!" textFill="#5431e1">
+            <Label fx:id="successalert" layoutX="144.0" layoutY="394.0" prefHeight="24.0" prefWidth="196.0" text="Đã thêm từ thành công!" textFill="#24a145">
                <font>
                   <Font size="15.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Utils/Icons/icons8_ok_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Label>
          </children>
       </Pane>
-      <ImageView fitHeight="436.0" fitWidth="294.0" layoutX="452.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="436.0" fitWidth="289.0" layoutX="451.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Utils/Images/slogan1.png" />
          </image>

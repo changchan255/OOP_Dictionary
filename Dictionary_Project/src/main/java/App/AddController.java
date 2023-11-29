@@ -12,6 +12,7 @@ import javafx.scene.input.KeyEvent;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
+import java.util.concurrent.Delayed;
 
 public class AddController implements Initializable {
     private Dictionary dictionary = Dictionary.getInstance();
@@ -19,6 +20,8 @@ public class AddController implements Initializable {
 
     public TextArea addtarget, addexplain;
     public Button addbtn;
+
+    public Label successalert;
     String path = "/Users/lehung/Documents/OOP/OOP_Dictionary/Dictionary_Project/src/main/resources/Utils/dictionary.txt";
 
     @Override
@@ -47,10 +50,11 @@ public class AddController implements Initializable {
                 }
             }
         });
+        successalert.setVisible(false);
     }
 
     @FXML
-    public void handleaddbutton() {
+    public void handleaddbutton() throws InterruptedException {
 
         Alert confirm = new Alert(Alert.AlertType.CONFIRMATION);
         confirm.setTitle("Add Word");
@@ -78,9 +82,12 @@ public class AddController implements Initializable {
 //                int x = dictionaryManagement.dictionaryLookup();
                 if (optional1.get() == replaceExplain) {
                     dictionaryManagement.dictionaryUpdate_replace(dictionary, target, explain);
+                    successalert();
                 }
                 else if (optional1.get() == addExplain) {
                     dictionaryManagement.dictionaryUpdate_add(dictionary, target, explain);
+
+                    successalert();
                 }
                 else if (optional1.get() == ButtonType.CANCEL) {
                     Alert end = new Alert(Alert.AlertType.INFORMATION);
@@ -91,11 +98,28 @@ public class AddController implements Initializable {
             }
             else {
                 dictionaryManagement.dictionaryAdd(dictionary, target, explain);
+                successalert();
             }
             addbtn.setDisable(true);
             addtarget.setText("");
             addexplain.setText("");
         }
 
+    }
+
+    private void successalert() {
+        successalert.setVisible(true);
+        setDelay(() -> successalert.setVisible(false), 2000);
+    }
+
+    private void setDelay(Runnable runnable, int delay) {
+        new Thread(() -> {
+            try {
+                Thread.sleep(delay);
+                runnable.run();
+            } catch (Exception e) {
+                System.err.println(e);
+            }
+        }).start();
     }
 }

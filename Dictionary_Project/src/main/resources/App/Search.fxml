@@ -3,19 +3,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.SearchController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="781.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.SearchController">
     <children>
-        <Pane layoutX="23.0" layoutY="14.0" prefHeight="372.0" prefWidth="254.0" style="-fx-background-color: pink ;">
+        <Pane layoutX="48.0" layoutY="127.0" prefHeight="406.0" prefWidth="281.0" style="-fx-background-color: pink ;">
             <children>
-                <TextField fx:id="searchField" layoutX="20.0" layoutY="26.0" prefHeight="26.0" prefWidth="204.0" promptText="Nhập để tìm kiếm" />
-                <ListView fx:id="searchList" layoutX="20.0" layoutY="80.0" prefHeight="258.0" prefWidth="213.0" />
+                <TextField fx:id="searchField" layoutX="42.0" layoutY="25.0" prefHeight="26.0" prefWidth="204.0" promptText="Nhập để tìm kiếm" />
+                <ListView fx:id="searchList" layoutX="22.0" layoutY="90.0" onMouseClicked="#handleClickSearchedWord" prefHeight="295.0" prefWidth="238.0" />
             </children>
         </Pane>
-        <Pane layoutX="291.0" layoutY="14.0" prefHeight="372.0" prefWidth="286.0" style="-fx-background-color: pink;">
+        <Pane layoutX="360.0" layoutY="127.0" prefHeight="406.0" prefWidth="378.0" style="-fx-background-color: pink;">
             <children>
-                <TextArea fx:id="explainField" layoutX="24.0" layoutY="81.0" prefHeight="256.9998779296875" prefWidth="237.91664804687753" text="Danh từ&#10;Cần kiệm&#10;Hà tiện&#10;Tiết kiệm" wrapText="true" />
-                <Button fx:id="soundBtn" disable="false" layoutX="116.0" layoutY="12.0" minHeight="25.951171875" minWidth="30.1458740234375" mnemonicParsing="false" onAction="#handleClickSoundBtn" prefHeight="26.981689453125" prefWidth="40.66839599609375" text="" textFill="BLACK">
+                <TextArea fx:id="explainField" layoutX="24.0" layoutY="89.0" prefHeight="302.0" prefWidth="330.0" text="Danh từ&#10;Cần kiệm&#10;Hà tiện&#10;Tiết kiệm" wrapText="true" />
+                <Button fx:id="soundBtn" disable="false" layoutX="181.0" layoutY="25.0" minHeight="25.951171875" minWidth="30.1458740234375" mnemonicParsing="false" onAction="#handleClickSoundBtn" prefHeight="26.981689453125" prefWidth="40.66839599609375" text="" textFill="BLACK">
                     <graphic>
                         <ImageView fitHeight="22.957580774330438" fitWidth="26.66839599609375" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -23,7 +24,7 @@
                             </image>
                         </ImageView>
                     </graphic></Button>
-                <Button fx:id="editBtn" layoutX="156.0" layoutY="6.0" minWidth="26.66839599609375" mnemonicParsing="false" onAction="#handleClickEditBtn" prefHeight="38.0" prefWidth="46.0" text="Button">
+                <Button fx:id="editBtn" layoutX="222.0" layoutY="20.0" minWidth="26.66839599609375" mnemonicParsing="false" onAction="#handleClickEditBtn" prefHeight="38.0" prefWidth="46.0" text="Button">
                     <graphic>
                         <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -31,7 +32,7 @@
                             </image>
                         </ImageView>
                     </graphic></Button>
-                <Button fx:id="removeBtn" layoutX="200.0" layoutY="6.0" minWidth="34.99993896484375" mnemonicParsing="false" onAction="#handleClickRemoveBtn" prefHeight="38.0" prefWidth="44.0" text="Button">
+                <Button fx:id="removeBtn" layoutX="268.0" layoutY="20.0" minWidth="34.99993896484375" mnemonicParsing="false" onAction="#handleClickRemoveBtn" prefHeight="38.0" prefWidth="44.0" text="Button">
                     <graphic>
                         <ImageView fitHeight="18.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -39,7 +40,7 @@
                             </image>
                         </ImageView>
                     </graphic></Button>
-                <Button fx:id="saveBtn" layoutX="243.0" layoutY="5.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleClickSaveBtn" prefHeight="39.0" prefWidth="42.0" text="Button">
+                <Button fx:id="saveBtn" layoutX="312.0" layoutY="19.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleClickSaveBtn" prefHeight="39.0" prefWidth="42.0" text="Button">
                     <graphic>
                         <ImageView fitHeight="28.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -47,8 +48,22 @@
                             </image>
                         </ImageView>
                     </graphic></Button>
-                <Label fx:id="searchedWord" layoutX="8.0" layoutY="14.0" prefHeight="27.0" prefWidth="103.0" text="abc" />
+                <Label fx:id="searchedWord" layoutX="24.0" layoutY="28.0" prefHeight="27.0" prefWidth="148.0" text="abc" />
             </children>
         </Pane>
+      <Pane layoutX="49.0" layoutY="38.0" prefHeight="64.0" prefWidth="687.0" style="-fx-background-color: pink;">
+         <children>
+            <Label layoutX="52.0" layoutY="13.0" prefHeight="30.0" prefWidth="225.0" text="Search" textFill="#3522da">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Icons/icons8_search_64px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
     </children>
 </AnchorPane>
