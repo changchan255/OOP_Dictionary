@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.ToggleGroup?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="781.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.GameController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="781.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.GameController">
    <children>
       <Label fx:id="result" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="416.0" prefHeight="52.0" prefWidth="143.0" textFill="#db5539">
          <font>
             <Font size="19.0" />
          </font></Label>
-      <Pane layoutX="176.0" layoutY="126.0" prefHeight="415.0" prefWidth="571.0" style="-fx-background-color: pink;">
+      <Pane layoutX="255.0" layoutY="115.0" prefHeight="422.0" prefWidth="487.0" style="-fx-background-color: pink;" styleClass="hi" stylesheets="@style.css">
          <children>
-            <Label fx:id="question" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="16.0" prefHeight="98.0" prefWidth="515.0">
+            <Label fx:id="question" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="16.0" prefHeight="98.0" prefWidth="415.0">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <VBox layoutX="50.0" layoutY="134.0" prefHeight="200.0" prefWidth="484.0" spacing="30.0">
+            <VBox layoutX="50.0" layoutY="131.0" prefHeight="203.0" prefWidth="403.0" spacing="30.0">
                <children>
                   <RadioButton fx:id="choiceA" mnemonicParsing="false">
                      <toggleGroup>
@@ -59,23 +53,38 @@
                   <Insets />
                </opaqueInsets>
             </VBox>
-            <Button fx:id="checkBtn" layoutX="131.0" layoutY="348.0" mnemonicParsing="false" onAction="#onClickcheckBtn" prefHeight="32.0" prefWidth="82.0" text="Submit" />
-            <Button fx:id="nextBtn" layoutX="387.0" layoutY="350.0" mnemonicParsing="false" onAction="#onClicknextBtn" prefHeight="30.0" prefWidth="78.0" text="Next" />
+            <Button fx:id="checkBtn" layoutX="90.0" layoutY="348.0" mnemonicParsing="false" onAction="#onClickcheckBtn" prefHeight="32.0" prefWidth="82.0" text="Submit">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="nextBtn" layoutX="320.0" layoutY="348.0" mnemonicParsing="false" onAction="#onClicknextBtn" prefHeight="32.0" prefWidth="82.0" text="Next">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
          </children>
       </Pane>
-      <Pane layoutX="27.0" layoutY="33.0" prefHeight="64.0" prefWidth="722.0" style="-fx-background-color: pink;">
+      <Pane layoutX="40.0" layoutY="29.0" prefHeight="64.0" prefWidth="700.0" style="-fx-background-color: pink;" styleClass="hi" stylesheets="@style.css">
          <children>
-            <Label layoutX="52.0" layoutY="13.0" prefHeight="38.0" prefWidth="255.0" text="MultiChoice Game" textFill="#3522da">
+            <Label layoutX="52.0" layoutY="13.0" prefHeight="44.0" prefWidth="277.0" text="MultiChoice Game" textFill="WHITE">
                <font>
-                  <Font size="31.0" />
+                  <Font name="Droid Serif" size="31.0" />
                </font>
             </Label>
-            <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="13.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Utils/Icons/icons8_edit_property_64px.png" />
+                  <Image url="@../Utils/Icons/game.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
+      <ImageView fitHeight="318.0" fitWidth="209.0" layoutX="40.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utils/Images/1.png" />
+         </image></ImageView>
+      <ImageView fitHeight="108.0" fitWidth="209.0" layoutX="40.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utils/Images/push%20yourself%20because%20no%20one%20else%20is%20going%20to%20do%20it%20for%20you..png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
