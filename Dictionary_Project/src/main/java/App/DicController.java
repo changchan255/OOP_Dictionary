@@ -8,6 +8,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 
@@ -20,10 +22,13 @@ public class DicController implements Initializable {
     private Tooltip tooltip1, tooltip2, tooltip3, tooltip4, tooltip5, tooltip6;
 
     @FXML
-    private Button exitButton, searchButton, addButton, transButton, gameButton;
+    private Button exitButton, searchButton, addButton, transButton, gameButton, homeButton;
 
     @FXML
     private AnchorPane container;
+
+    @FXML
+    private ImageView home;
 
     private void setNode(Node node) {
         container.getChildren().clear();
@@ -70,6 +75,13 @@ public class DicController implements Initializable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 showComponent("MultigameGUI.fxml");
+            }
+        });
+
+        homeButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                container.getChildren().add(home);
             }
         });
 

@@ -43,7 +43,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
         </Button>
-      <Button fx:id="transButton" layoutX="10.0" layoutY="271.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="29.0" style="-fx-background-color: pink;">
+      <Button fx:id="transButton" layoutX="10.0" layoutY="357.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="29.0" style="-fx-background-color: pink;">
          <tooltip>
             <Tooltip fx:id="tooltip4" text="Dịch nghĩa" />
          </tooltip>
@@ -58,7 +58,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="gameButton" layoutX="4.0" layoutY="334.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="57.0" style="-fx-background-color: pink;">
+      <Button fx:id="gameButton" layoutX="6.0" layoutY="421.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="57.0" style="-fx-background-color: pink;">
          <tooltip>
             <Tooltip fx:id="tooltip5" text="Trắc nghiệm" />
          </tooltip>
@@ -88,21 +88,24 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="6.0" layoutY="400.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="33.0" style="-fx-background-color: pink;">
+      <Button fx:id="homeButton" layoutX="6.0" layoutY="280.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="33.0" style="-fx-background-color: pink;">
          <graphic>
             <ImageView fitHeight="78.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Utils/Icons/remove.png" />
+                  <Image url="@../Utils/Icons/home.png" />
                </image>
             </ImageView>
          </graphic>
          <tooltip>
-            <Tooltip fx:id="toooltip6" text="Xoá từ" />
+            <Tooltip fx:id="toooltip6" text="Trang chủ" />
          </tooltip>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <AnchorPane fx:id="container" layoutX="72.0" layoutY="14.0" prefHeight="587.0" prefWidth="781.0">
          <children>
-              <ImageView accessibleRole="PARENT" fitHeight="595.0" fitWidth="781.0" pickOnBounds="true" preserveRatio="true">
+              <ImageView fx:id="home" accessibleRole="PARENT" fitHeight="595.0" fitWidth="781.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Utils/Images/387472848_2634258193397479_5820426671132712346_n.jpg" />
                </image>
