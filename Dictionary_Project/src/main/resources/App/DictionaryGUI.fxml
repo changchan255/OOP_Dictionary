@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Tooltip?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="614.0" prefWidth="867.0" style="-fx-background-color: pink;" styleClass="root" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.DicController">
+<AnchorPane prefHeight="614.0" prefWidth="867.0" style="-fx-background-color: pink;" styleClass="root" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.DicController">
    <children>
         <Button fx:id="searchButton" contentDisplay="CENTER" layoutX="8.0" layoutY="141.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="40.0" style="-fx-background-color: pink;" textFill="#9e5050">
             <font>
@@ -28,12 +26,12 @@
             <Cursor fx:constant="HAND" />
          </cursor>
         </Button>
-        <Button fx:id="addButton" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="6.0" layoutY="209.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="43.0" style="-fx-background-color: pink;">
+        <Button fx:id="addButton" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="209.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-background-color: pink;">
             <tooltip>
                 <Tooltip fx:id="tooltip3" text="Thêm từ" />
             </tooltip>
          <graphic>
-                <ImageView fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="30.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../Utils/Icons/add.png" />
                     </image>
@@ -43,14 +41,14 @@
             <Cursor fx:constant="HAND" />
          </cursor>
         </Button>
-      <Button fx:id="transButton" layoutX="10.0" layoutY="271.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="29.0" style="-fx-background-color: pink;">
+      <Button fx:id="transButton" layoutX="3.0" layoutY="271.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="29.0" style="-fx-background-color: pink;">
          <tooltip>
             <Tooltip fx:id="tooltip4" text="Dịch nghĩa" />
          </tooltip>
          <graphic>
-            <ImageView fitHeight="36.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="64.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Utils/Icons/icons8_google_translate_48px.png" />
+                  <Image url="@../Utils/Icons/405239706_1601011133765346_3402005213324257847_n_preview_rev_1.png" />
                </image>
             </ImageView>
          </graphic>
@@ -58,7 +56,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="gameButton" layoutX="4.0" layoutY="334.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="57.0" style="-fx-background-color: pink;">
+      <Button fx:id="gameButton" layoutX="7.0" layoutY="350.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="57.0" style="-fx-background-color: pink;">
          <tooltip>
             <Tooltip fx:id="tooltip5" text="Trắc nghiệm" />
          </tooltip>
@@ -66,7 +64,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
          <graphic>
-            <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="48.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Utils/Icons/game.png" />
                </image>
@@ -78,9 +76,9 @@
             <Tooltip fx:id="tooltip1" text="Thoát" />
          </tooltip>
          <graphic>
-            <ImageView fitHeight="30.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="38.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Utils/Icons/exit1.png" />
+                  <Image url="@../Utils/Icons/exit.png" />
                </image>
             </ImageView>
          </graphic>
@@ -88,9 +86,9 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="6.0" layoutY="400.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="33.0" style="-fx-background-color: pink;">
+      <Button layoutX="1.0" layoutY="410.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="33.0" style="-fx-background-color: pink;">
          <graphic>
-            <ImageView fitHeight="78.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="39.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Utils/Icons/remove.png" />
                </image>
