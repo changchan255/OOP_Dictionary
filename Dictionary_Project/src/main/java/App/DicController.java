@@ -90,7 +90,7 @@ public class DicController implements Initializable {
         tooltip3.setShowDelay(Duration.seconds(0.5));
         tooltip4.setShowDelay(Duration.seconds(0.5));
         tooltip5.setShowDelay(Duration.seconds(0.5));
-//        tooltip3.setShowDelay(Duration.seconds(0.5));
+        tooltip6.setShowDelay(Duration.seconds(0.5));
 
         exitButton.setOnMouseClicked(e -> {
             System.exit(0);

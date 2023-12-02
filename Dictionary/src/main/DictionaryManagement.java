@@ -11,19 +11,8 @@ import java.util.Scanner;
 
 public class DictionaryManagement {
     protected Dictionary dictionary = new Dictionary();
-    protected Map<String,String> mp = new HashMap<>();
-
-//    public void insertFromCommandline1() {
-////        Scanner sn = new Scanner(System.in);
-////        int n = StdIn.readInt();
-//        while (!StdIn.isEmpty()) {
-//            String a = StdIn.readLine();
-//            String b = StdIn.readLine();
-//            Word w = new Word(a, b);
-//            mp.put(a,b);
-//            dictionary.add(w);
-//        }
-//    }
+    protected Map<String, Pair<String, Integer>> mp = new HashMap<>();
+    private Trie trie = new DictionaryCmdLine.Trie();
 
     public void dictionaryLookup() {
         Scanner sc0 = new Scanner(System.in);
@@ -36,7 +25,7 @@ public class DictionaryManagement {
         try {
             List<String> allText = Files.readAllLines(f.toPath(), StandardCharsets.UTF_8);
             for (String line : allText) {
-                String[] word = line.split("\t");
+                String[] word = line.split(" : ");
                 String t = word[0];
                 String e = word[1];
                 mp.put(t, e);
@@ -48,19 +37,12 @@ public class DictionaryManagement {
         }
     }
 
-    public void dictionaryAdd() {
-//        StdOut.println("Nhap target: ");
-//        String t = StdIn.readLine();
-//        StdOut.println("Nhap explain: ");
-//        String e = StdIn.readLine();
-//        mp.put(t, e);
-//        Word w = new Word(t, e);
-//        dictionary.add(w);
-        Scanner sc1 = new Scanner(System.in);
-        System.out.println("Nhap target: ");
-        String t = sc1.nextLine();
-        System.out.println("Nhap explain: ");
-        String e = sc1.nextLine();
+    public void dictionaryAdd(Dictionary dictionary, String t, String e) {
+//        Scanner sc1 = new Scanner(System.in);
+//        System.out.println("Nhap target: ");
+//        String t = sc1.nextLine();
+//        System.out.println("Nhap explain: ");
+//        String e = sc1.nextLine();
         mp.put(t, e);
         Word w = new Word(t, e);
         dictionary.add(w);
@@ -98,7 +80,7 @@ public class DictionaryManagement {
         try {
             PrintWriter pw = new PrintWriter("/Users/lehung/Documents/OOP/Dictionary/dictionary.txt","UTF-8");
             for (Word w:dictionary) {
-                pw.println(w.getWord_target() + "\t" + w.getWord_explain());
+                pw.println(w.getWord_target() + " : " + w.getWord_explain());
             }
             pw.close();
         }

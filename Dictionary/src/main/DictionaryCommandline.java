@@ -56,7 +56,12 @@ public class DictionaryCommandline extends DictionaryManagement {
                 break;
             }
             else if (choice == 1) {
-                this.dictionaryAdd();
+                Scanner sc1 = new Scanner(System.in);
+                System.out.println("Nhap target: ");
+                String t = sc1.nextLine();
+                System.out.println("Nhap explain: ");
+                String e = sc1.nextLine();
+                this.dictionaryAdd(Dictionary dictionary, t, e);
             }
             else if (choice == 2) {
                 this.dictionaryRemove();
