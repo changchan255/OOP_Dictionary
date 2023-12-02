@@ -3964,7 +3964,7 @@ territory : lãnh thổ
 terror : khủng bố
 terrorism : khủng bố
 terrorist : khủng bố
-test : thử nghiệm
+App : thử nghiệm
 testify : làm chứng
 testimony : lời khai
 testing : thử nghiệm

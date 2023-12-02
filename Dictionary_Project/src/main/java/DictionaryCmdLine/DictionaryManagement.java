@@ -77,7 +77,7 @@ private static DictionaryManagement instance;
     public ObservableList<String> dictionarySearcher(Dictionary dictionary, String t) {
         List<String> list = trie.searchWithPrefix(t);
         ObservableList<String> result = FXCollections.observableArrayList();
-        for (int i = 0; i < Math.min(10, list.size()); i++) {
+        for (int i = 0; i < Math.min(20, list.size()); i++) {
             result.add(list.get(i));
         }
         return result;
