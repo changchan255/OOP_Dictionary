@@ -5,6 +5,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -30,26 +32,34 @@ public class GameController implements Initializable {
     public void onClickcheckBtn(ActionEvent event) {
         if (listQuestion.get(x).getAnswer().equals("A")) {
             if (choiceA.isSelected()) {
+                result.setTextFill(Color.GREEN);
                 result.setText("Exactly!");
             } else {
+                result.setTextFill(Color.RED);
                 result.setText("Wrong!");
             }
         } else if (listQuestion.get(x).getAnswer().equals("B")) {
             if (choiceB.isSelected()) {
+                result.setTextFill(Color.GREEN);
                 result.setText("Exactly!");
             } else {
+                result.setTextFill(Color.RED);
                 result.setText("Wrong!");
             }
         }else if (listQuestion.get(x).getAnswer().equals("C")) {
             if (choiceC.isSelected()) {
+                result.setTextFill(Color.GREEN);
                 result.setText("Exactly!");
             } else {
+                result.setTextFill(Color.RED);
                 result.setText("Wrong!");
             }
         } else if (listQuestion.get(x).getAnswer().equals("D")) {
             if (choiceD.isSelected()) {
+                result.setTextFill(Color.GREEN);
                 result.setText("Exactly!");
             } else {
+                result.setTextFill(Color.RED);
                 result.setText("Wrong!");
             }
         }

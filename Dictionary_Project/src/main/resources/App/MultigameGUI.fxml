@@ -31,21 +31,33 @@
                      <font>
                         <Font size="16.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </RadioButton>
                   <RadioButton fx:id="choiceB" mnemonicParsing="false" toggleGroup="$choice">
                      <font>
                         <Font size="16.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </RadioButton>
                   <RadioButton fx:id="choiceC" mnemonicParsing="false" toggleGroup="$choice">
                      <font>
                         <Font size="16.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </RadioButton>
                   <RadioButton fx:id="choiceD" mnemonicParsing="false" toggleGroup="$choice">
                      <font>
                         <Font size="16.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </RadioButton>
                </children>
                <cursor>
@@ -58,11 +70,17 @@
             <Button fx:id="checkBtn" layoutX="90.0" layoutY="348.0" mnemonicParsing="false" onAction="#onClickcheckBtn" prefHeight="32.0" prefWidth="82.0" text="Submit">
                <font>
                   <Font name="System Bold" size="12.0" />
-               </font></Button>
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
             <Button fx:id="nextBtn" layoutX="320.0" layoutY="348.0" mnemonicParsing="false" onAction="#onClicknextBtn" prefHeight="32.0" prefWidth="82.0" text="Next">
                <font>
                   <Font name="System Bold" size="12.0" />
-               </font></Button>
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
             <Label fx:id="result" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="296.0" prefHeight="52.0" prefWidth="143.0" textFill="#4cd93b">
                <font>
                   <Font size="19.0" />
