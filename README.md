@@ -43,7 +43,6 @@ git clone https://github.com/changchan255/OOP_Dictionary.git
  ```
 cd OOP_Dictionary
  ./mvnw javafx:run 
-
 ```
 Alternatively, open the project in your IDE and run the application from there.
 Make sure you have the JDK environment installed and follow the above steps to start using your application.
