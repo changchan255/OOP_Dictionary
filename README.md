@@ -26,7 +26,7 @@
 * High-quality audio pronunciations
 
 <p align="center">
-      <img src="https://github.com/changchan255/OOP_Dictionary/assets/124891537/bf384872-3be3-44e8-b4cc-88873508ad2d" width="50%" height="50%"/>
+      <img src="https://github.com/changchan255/OOP_Dictionary/assets/124891537/bf384872-3be3-44e8-b4cc-88873508ad2d" width="80%" height="80%"/>
 </p>
 
 # Installation
