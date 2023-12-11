@@ -30,4 +30,20 @@
 </p>
 
 # Installation
+## Requirements
+* Java Development Kit (JDK): Ensure you have the JDK installed on your machine. You can download the JDK from the [official Oracle website](https://www.oracle.com/java/technologies/downloads/).
+  
+## Installation
+1. Clone the repository from GitHub:
+ ```
+git clone https://github.com/changchan255/OOP_Dictionary.git
+```
 
+2. Run the application: Open a terminal, navigate to the project directory, and run the following command:
+ ```
+cd OOP_Dictionary
+ ./mvnw javafx:run 
+
+```
+Alternatively, open the project in your IDE and run the application from there.
+Make sure you have the JDK environment installed and follow the above steps to start using your application.
